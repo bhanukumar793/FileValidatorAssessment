@@ -1,0 +1,32 @@
+Below points are our assumptions for the input file which will be provided for validation. Only unique reference number and End balance validations are applied. Incase, if the assumptions are wrong, then more validation should be applied.
+
+Assumptions:
+1.  Transaction reference number is mandatory.
+2.  Account number (IBAN) is mandatory. It should be alphanumeric and should not exceed 34 characters.
+3.  Description is required as it is used in error report.
+4.  Start, Mutation and End balance are mandatory.
+5.  Start, Mutation and End balance should be numeric with 2 decimals.
+
+Validations applied:
+1.  Supported files (csv, xml) should be selected. Else, Error message will be populated on UI.
+2.  File will be validated only after Validate File button is clicked.
+3.  File should contain data. Else, error message will be populated on UI once the file is validated.
+4.  Transaction reference number should be unique. Else, the respective error message will be displayed in report.
+5.  Start, Mutation and End balance are required. Else, the respective error message will be displayed in report.
+6.  Error column is also included. It contains specific validation error message.
+7.  Download Report button will be visible/populated only after the validation is completed and contains any data for error report.
+8.  Validate File button will be enable only if the supported file is uploaded/selected.
+
+
+________________________________________________________________________________________________________
+
+Steps to be followed for file validation:
+
+1.  Launch the application.
+2.  Click on "Choose File" button.
+3.  Upload support files (csv, xml).
+4.  Click on "Validate File" button.
+5.  Once the validation is completed, message will populated on the page.
+6.  If there are errors then the "Download Report" button will be populated on the page.
+7.  Click on "Download Report" button.
+8.  Excel file will be download which contains the details of the validation failed record with respective error. 

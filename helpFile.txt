@@ -1,0 +1,10 @@
+Steps to be followed for file validation:
+
+1.  Launch the application.
+2.  Click on "Choose File" button.
+3.  Upload support files (csv, xml).
+4.  Click on "Validate File" button.
+5.  Once the validation is completed, message will populated on the page.
+6.  If there are errors then the "Download Report" button will be populated on the page.
+7.  Click on "Download Report" button.
+8.  Excel file will be download which contains the details of the validation failed record with respective error. 
